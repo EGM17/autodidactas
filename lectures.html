@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/lectures.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Autodidactas</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link">Lecturas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Quiz</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Libros</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Acerca de</a>
+                    </li>
+
+                    <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+            <a href="https://forms.gle/89T2fSnS26vRQGuz8" class="button button__header">Enviar Apuntes</a>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+            <button class="btn" onclick="filterSelection('cars')"> Comercio Internacional</button>
+            <button class="btn" onclick="filterSelection('animals')"> Desarrollo web</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Marketing</button>
+            <button class="btn" onclick="filterSelection('colors')"> Enfermeria</button>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container-filter">
+            <div class="filterDiv cars text_filter">
+                <div class="text_filter_results">
+                    <p>Concepto e Importancia <br> del Comercio Internacional</p>
+                </div>
+            </div>
+            <div class="filterDiv colors fruits">Orange</div>
+            <div class="filterDiv cars">Volvo</div>
+            <div class="filterDiv colors">Red</div>
+            <div class="filterDiv cars animals">Mustang</div>
+            <div class="filterDiv colors">Blue</div>
+            <div class="filterDiv animals">Cat</div>
+            <div class="filterDiv animals">Dog</div>
+            <div class="filterDiv fruits">Melon</div>
+            <div class="filterDiv fruits animals">Kiwi</div>
+            <div class="filterDiv fruits">Banana</div>
+            <div class="filterDiv fruits">Lemon</div>
+            <div class="filterDiv animals">Cow</div>
+        </div>
+    </section>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
